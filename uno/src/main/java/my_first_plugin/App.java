@@ -1,4 +1,5 @@
 package my_first_plugin;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -11,10 +12,11 @@ public class App extends JavaPlugin
     {
         System.out.println( "Hello World!" );
     }
-    
+
     @Override
     public void onEnable() {
         getLogger().info("Hello, SpigotMC!");
+        this.getCommand("kit").setExecutor(new CommandKit());
     }
     @Override
     public void onDisable() {
