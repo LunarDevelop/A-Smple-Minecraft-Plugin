@@ -1,0 +1,3 @@
+main: my_first_plugin.App
+name: Basic command
+version: 0.1
