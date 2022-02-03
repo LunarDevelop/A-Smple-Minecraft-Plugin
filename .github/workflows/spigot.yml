@@ -21,9 +21,9 @@ jobs:
       #  You may pin to the exact commit or the version.
       # uses: SpraxDev/Action-SpigotMC@19265bf5a2d483392819790c8cb5a990922a21bb
       uses: SpraxDev/Action-SpigotMC@v3
-      with:
+      with:  
         # Versions to build (sperate multiple with ',')
-        versions: latest# optional, default is latest
+        versions: latest #optional, default is latest
         # Should sources be generated?
         generateSrc: false # optional, default is false
         # Should the documentation be generated?
