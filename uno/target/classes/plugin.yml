@@ -3,6 +3,6 @@ name: Basic_commands
 version: 0.1
 commands:
    kit:
-      description: Your description
+      description: A simple command to give user diamonds and bricks
       usage: /<command> <amountOfDiamonds>
-      permission: yourplugin.yourcommandpermission
+      permission: basiccmds.useKitsbasic

@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 public class CommandKit implements CommandExecutor {
+    
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof Player) {
@@ -20,7 +21,12 @@ public class CommandKit implements CommandExecutor {
 
             // Set the amount of the ItemStack
             bricks.setAmount(20);
+
+            if (args.length == 0) {
+                diamond.setAmount(1);
+            } else {
             diamond.setAmount(Integer.parseInt(args[0]));
+            }
 
             // Give the player our items (comma-seperated list of all ItemStack)
             player.getInventory().addItem(bricks, diamond);
