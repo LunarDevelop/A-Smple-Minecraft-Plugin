@@ -90,7 +90,6 @@ public class CommandGui implements CommandExecutor, Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command arg1, String arg2, String[] arg3) {
-        // TODO Auto-generated method stub
 
         openInventory((HumanEntity) sender);
 
