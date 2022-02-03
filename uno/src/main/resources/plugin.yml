@@ -2,7 +2,11 @@ main: my_first_plugin.App
 name: Basic_commands
 version: 0.1
 commands:
-   kit:
+    kit:
       description: A simple command to give user diamonds and bricks
       usage: /<command> <amountOfDiamonds>
       permission: basiccmds.useKitsbasic
+    gui:
+      description: A simple command to test opening a gui from command
+      usage: /<command>
+      permission: basiccmds.useGuiTest
