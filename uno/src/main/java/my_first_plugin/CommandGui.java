@@ -87,9 +87,9 @@ public class CommandGui implements CommandExecutor, Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command arg1, String arg2, String[] arg3) {
-
+        if(!(sender instanceof Player)) return false;
         openInventory((HumanEntity) sender);
 
-        return false;
+        return true;
     }
 }
