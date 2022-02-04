@@ -75,9 +75,6 @@ public class CommandGui implements CommandExecutor, Listener {
         final Player p = (Player) e.getWhoClicked();
 
         p.getInventory().addItem(clickedItem);
-
-        // Using slots click is a best option for your inventory click's
-        p.sendMessage("You clicked at slot " + e.getRawSlot());
     }
 
     // Cancel dragging in our inventory
