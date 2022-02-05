@@ -19,7 +19,14 @@ public class App extends JavaPlugin implements Listener
 
     @Override
     public void onEnable() {
-        getLogger().info("Hello, SpigotMC!");
+        String[] WelcomeMsg = {
+            "Solar's first plugin has been enabled",
+            "This plugin is mainly for testing and learning Bukkit plugins"
+        };
+
+        for (String string : WelcomeMsg) {
+            getLogger().info(string);
+        }
 
         CommandGui gui = new CommandGui();
 
@@ -28,7 +35,6 @@ public class App extends JavaPlugin implements Listener
         this.getCommand("playerinfo").setExecutor(new CommandInfo());
         this.getCommand("fly").setExecutor(new CommandFly());
         this.getCommand("flyspeed").setExecutor(new CommandFlySpeed());
-
 
         getServer().getPluginManager().registerEvents(this, this);
         getServer().getPluginManager().registerEvents(gui, this);
