@@ -18,7 +18,6 @@ commands:
       description: A simple command that allows to enable or disable flight
       usage: /<command>
       permission: basiccmds.useFly
-      permission: basiccmds.usePlayerInfo
     flyspeed:
       description: A simple command that allows to change your flight speed
       usage: /<command> <speed>
