@@ -12,7 +12,7 @@ public class CommandFlySpeed implements CommandExecutor {
 
         Player p = (Player) sender;
         try {
-            p.setFlySpeed(Integer.parseInt(args[0]);
+            p.setFlySpeed(Integer.parseInt(args[0]));
 
             p.sendMessage("Your flight speed is now set to: " +  args[0]);
         }
