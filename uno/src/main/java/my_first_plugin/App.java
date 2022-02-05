@@ -26,6 +26,8 @@ public class App extends JavaPlugin implements Listener
         this.getCommand("kit").setExecutor(new CommandKit());
         this.getCommand("gui").setExecutor(gui);
         this.getCommand("playerinfo").setExecutor(new CommandInfo());
+        this.getCommand("fly").setExecutor(new CommandFly());
+
 
         getServer().getPluginManager().registerEvents(this, this);
         getServer().getPluginManager().registerEvents(gui, this);
