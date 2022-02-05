@@ -10,3 +10,7 @@ commands:
       description: A simple command to test opening a gui from command
       usage: /<command>
       permission: basiccmds.useGuiTest
+    playerinfo:
+      description: A simple command that displays information about the current player or player that is sent
+      usage: /<command> <player>
+      permission: basiccmds.usePlayerInfo
