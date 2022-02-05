@@ -19,6 +19,6 @@ commands:
       usage: /<command>
       permission: basiccmds.useFly
     flyspeed:
-      description: A simple command that allows to change your flight speed
+      description: A simple command that allows to change your flight speed, speed is between 1 and 100
       usage: /<command> <speed>
       permission: basiccmds.useFlySpeed
