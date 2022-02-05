@@ -14,3 +14,7 @@ commands:
       description: A simple command that displays information about the current player or player that is sent
       usage: /<command> <player>
       permission: basiccmds.usePlayerInfo
+    fly:
+      description: A simple command that allows to enable or disable flight
+      usage: /<command>
+      permission: basiccmds.useFly
