@@ -1,5 +1,10 @@
 package my_first_plugin;
 
+import java.io.File;
+import java.util.logging.Logger;
+
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;
@@ -12,6 +17,10 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class App extends JavaPlugin implements Listener
 {
+    private static final Logger log = Logger.getLogger("Minecraft");
+    public File file;
+    public FileConfiguration config;
+
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
@@ -23,6 +32,11 @@ public class App extends JavaPlugin implements Listener
             "Solar's first plugin has been enabled",
             "This plugin is mainly for testing and learning Bukkit plugins"
         };
+
+        file = new File(getDataFolder(), "config.yml");
+        config = new YamlConfiguration();
+
+        saveDefaultConfig();
 
         for (String string : WelcomeMsg) {
             getLogger().info(string);
@@ -47,11 +61,12 @@ public class App extends JavaPlugin implements Listener
 
     @EventHandler
     public void onLogin(PlayerLoginEvent event) {
-        getLogger().info("Player " + event.getPlayer().getName() + " is logging in!");
+        log.info("Player " + event.getPlayer().getName() + " is logging in!");
     }
     
     @EventHandler
     public void onQuit(PlayerQuitEvent event) {
-        getLogger().info("Player " + event.getPlayer().getName() + " is quitting the server!");
+        log.info("Player " + event.getPlayer().getName() + " is quitting the server!");
     }
+
 }
