@@ -1,0 +1,33 @@
+# Do not change unless you have a database to connect to. (Coming Soon)
+### Options: local or mysql
+data_source : local
+
+
+# Kit Configs
+## This section is used to set up how you want kit menu to be,
+## Follow the example below to understand how to use.
+
+#  example_kit :
+#   - name : The name you want to give the git
+#   - items : 
+#     - diamond_sword :
+#       - name : example sword
+#       - description : some lore on the sword
+#       - unbreakable : false
+#       - echantments :
+#         - strength : 2
+#     - iron_shovel : 
+#       - name : Some stupid shovel 
+kits :
+ - example_kit :
+    - name : The name you want to give the git
+    - items : 
+      - diamond_sword :
+        - name : example sword
+        - description : some lore on the sword
+        - unbreakable : false
+        - echantments :
+          - strength : 2
+      - iron_shovel : 
+        - name : Some stupid shovel 
+
